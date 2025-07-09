@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-emp-list',
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './emp-list.component.css'
 })
 export class EmpListComponent {
+
+  constructor( private router: Router){}
+
+
+  navigateToAddList(){
+    this.router.navigateByUrl("add-emp")
+  }
 
 }
