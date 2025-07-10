@@ -1,7 +1,7 @@
 import { HttpClient , HttpHeaders} from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { User } from '../../interface/user';
+import { User } from '../../interface/User';
 import { from } from 'rxjs';
 
 @Component({
